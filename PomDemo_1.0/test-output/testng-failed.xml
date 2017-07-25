@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [MercuryE2E]" parallel="none">
+  <test name="VALID SIGNIN/SIGNON (failed)" parallel="none">
+    <classes>
+      <class name="com.pages.SignON">
+        <methods>
+          <include name="Login"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- com.pages.SignON -->
+    </classes>
+  </test> <!-- VALID SIGNIN/SIGNON (failed) -->
+</suite> <!-- Failed suite [MercuryE2E] -->

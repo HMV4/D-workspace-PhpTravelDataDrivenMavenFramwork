@@ -1,0 +1,22 @@
+package com.sample;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Alert {
+	
+public static void main(String[] args) throws Exception {
+		
+		WebDriver driver=new FirefoxDriver();
+		driver.get("file:///E:/Contents/Website%20Collections/WebPages/Alert.html");;
+		
+		driver.findElement(By.xpath("//p")).click();
+		Thread.sleep(2000);
+		
+		System.out.println(driver.switchTo().alert().getText());
+		
+		
+
+}
+}

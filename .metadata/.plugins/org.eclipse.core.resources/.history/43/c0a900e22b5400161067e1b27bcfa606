@@ -1,0 +1,20 @@
+package com.sample;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Mercury {
+
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		WebDriver driver =new FirefoxDriver();
+		driver.manage().window().maximize();
+		driver.get("http://localhost/servlets/com.mercurytours.servlet.WelcomeServlet");
+		System.out.println("CNGRTSS");
+		driver.close();
+
+	}
+
+}

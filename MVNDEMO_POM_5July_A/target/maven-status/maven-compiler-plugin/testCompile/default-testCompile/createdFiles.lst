@@ -1,0 +1,8 @@
+com\pages\HomePage_Register.class
+com\pages\FlightBooker.class
+com\SnapShot\SnapshotUtilty.class
+com\pages\TestBase.class
+ExcelLib\Excelconfig.class
+com\pages\FlightFinder.class
+com\pages\SignON.class
+com\pages\SelectFlight.class

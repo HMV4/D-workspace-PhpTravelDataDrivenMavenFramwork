@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="271775" started-at="2017-07-19T21:18:07Z" finished-at="2017-07-19T21:22:39Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="271775" started-at="2017-07-19T21:18:07Z" finished-at="2017-07-19T21:22:39Z">
+      <class name="pageFactory_TestCases.quickBookTest">
+        <test-method status="PASS" signature="quickBooking()[pri:0, instance:pageFactory_TestCases.quickBookTest@b1054b]" name="quickBooking" duration-ms="271664" started-at="2017-07-20T02:48:07Z" finished-at="2017-07-20T02:52:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quickBooking -->
+      </class> <!-- pageFactory_TestCases.quickBookTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

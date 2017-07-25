@@ -1,0 +1,15 @@
+package com.STOCK;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Stock {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	 WebDriver driver = new FirefoxDriver();
+	 driver.get("http://182.59.129.79:8008/pages/home.html");
+
+
+	}
+
+}

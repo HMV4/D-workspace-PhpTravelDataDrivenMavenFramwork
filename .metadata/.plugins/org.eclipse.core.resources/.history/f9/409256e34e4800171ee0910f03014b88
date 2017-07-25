@@ -1,0 +1,89 @@
+package com.sample;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Redbus {
+
+	
+	static WebDriver driver =new FirefoxDriver();
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stubdrop
+
+		//driver.get("https://www.redbus.in/");
+		driver.get("file:///D:/Selenium%20Softwares/Tables/redBus%20%20%20Online%20Bus%20Ticket%20Booking,%20Book%20Volvo%20AC%20Bus%20Tickets,%20Reservation.htm");
+		//Source CITY
+		City("//div[1]/div[1]/ul/li",".//*[@id='txtSource']","Pune","pun");
+		
+		
+		//Dest City
+		City("//div[1]/div[1]/ul/li",".//*[@id='txtDestination']","Mumbai","mum");
+		//Dest Date
+		//date("#txtReturnCalendar","#rbcal_txtReturnCalendar table.monthTable.last td","20");
+		
+		//Source Date
+		date("#txtOnwardCalendar","#rbcal_txtOnwardCalendar table.monthTable.first td","17");
+		
+
+	} //  Main ends Here
+	
+	 
+	//Select CITY function 
+	
+	public static void City(String xpaths ,String SDpath,String city,String intellisense) throws InterruptedException
+	
+	{
+		driver.findElement(By.xpath(SDpath)).clear();
+		driver.findElement(By.xpath(SDpath)).sendKeys(intellisense);
+		// source city
+		List<WebElement> LI=driver.findElements(By.xpath(xpaths));
+		for(WebElement e : LI)
+
+		{
+
+			if(e.getText().equalsIgnoreCase(city))
+			{
+
+
+				System.out.println(e.getText());
+				e.click();
+				Thread.sleep(50000);
+				break;
+			}
+
+
+		}
+	}
+
+		//date srce
+	public static void date(String caltextbox,String calendar, String daydate) throws InterruptedException
+		{
+		
+		driver.findElement(By.cssSelector(caltextbox)).click();
+		System.out.println("Cal text box CLICKED");
+		List<WebElement> dates=driver.findElements(By.cssSelector(calendar));
+		//int i=0;
+		for (WebElement day : dates) {
+			//i++;
+			System.out.println(day.getText());
+			if(day.getText().equals(daydate))	
+			{
+				System.out.println(day.getText());
+				day.click();
+				Thread.sleep(50000);
+				break;
+			}
+			
+		}
+		
+		
+		
+	}
+
+
+
+}

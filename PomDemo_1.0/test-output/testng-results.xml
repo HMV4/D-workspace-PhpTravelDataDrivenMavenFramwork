@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="MercuryE2E" duration-ms="18318" started-at="2016-09-06T14:56:39Z" finished-at="2016-09-06T14:56:58Z">
+    <groups>
+    </groups>
+    <test name="Test Base" duration-ms="18" started-at="2016-09-06T14:56:39Z" finished-at="2016-09-06T14:56:39Z">
+    </test> <!-- Test Base -->
+    <test name="HOME PAGE REGISTER" duration-ms="6020" started-at="2016-09-06T14:56:39Z" finished-at="2016-09-06T14:56:45Z">
+      <class name="com.pages.HomePage_Register">
+        <test-method status="PASS" signature="Register(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.pages.HomePage_Register@a3c177]" name="Register" duration-ms="5996" started-at="2016-09-06T07:56:39Z" data-provider="getData" finished-at="2016-09-06T07:56:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[HMV3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[HMV3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[HMV3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Register -->
+      </class> <!-- com.pages.HomePage_Register -->
+    </test> <!-- HOME PAGE REGISTER -->
+    <test name="VALID SIGNIN/SIGNON " duration-ms="12211" started-at="2016-09-06T14:56:45Z" finished-at="2016-09-06T14:56:58Z">
+      <class name="com.pages.SignON">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:com.pages.SignON@696d5c]" name="initialize" is-config="true" duration-ms="14304" started-at="2016-09-06T07:56:25Z" finished-at="2016-09-06T07:56:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="Login()[pri:0, instance:com.pages.SignON@696d5c]" name="Login" duration-ms="12208" started-at="2016-09-06T07:56:45Z" finished-at="2016-09-06T07:56:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+      </class> <!-- com.pages.SignON -->
+    </test> <!-- VALID SIGNIN/SIGNON  -->
+  </suite> <!-- MercuryE2E -->
+</testng-results>

@@ -1,0 +1,22 @@
+
+public class Replace {
+	public static void main() {
+	int pos=0;
+	
+	String str = "this is my book";
+	
+	
+	
+	do{
+		
+		pos=str.indexOf('s');
+		
+		str=str.substring(0, pos)+"RR"+str.substring(pos+1);
+		
+		
+		
+		
+	}while(pos>-1);
+
+}
+}

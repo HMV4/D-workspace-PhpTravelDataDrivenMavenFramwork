@@ -1,0 +1,100 @@
+package com.sample;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class SIGNON
+{
+	
+	WebDriver driver =new FirefoxDriver();
+	public static void main(String[] args) throws InterruptedException  {
+		// TODO Auto-generated method stub
+		
+		
+		SIGNON S =new SIGNON();
+		S.Login();
+		S.BookFlight("2","table>tbody>tr>td>b>select","table>tbody>tr>td>select","Frankfurt");
+		
+	}
+
+	
+
+	
+		// LOGIN
+	public  void Login() throws InterruptedException
+	{
+		driver.get("http://localhost/servlets/com.mercurytours.servlet.SignonServlet");
+		driver.findElement(By.cssSelector("tr>td>input[name='userName']")).sendKeys("HITUJ");
+		driver.findElement(By.cssSelector("tr>td>input[name='password']")).sendKeys("HITUJ");
+		driver.findElement(By.cssSelector("tr>td>input[name='login']")).click();
+		Thread.sleep(10000);
+		System.out.println("SIGN IN SUCCESSFULLY");
+		
+	}
+	
+	
+	
+    //BOOK FLIGHT
+	public void BookFlight(String TotalPassenger,String PassPath,String DaArRetAirPath,String ArrivalPortname,String Departdateday)
+	{
+		
+		// Trip Type
+		
+		driver.findElement(By.cssSelector("input[value='oneway']")).click();
+		
+		//passenger
+		WebElement passenger = driver.findElement(By.cssSelector(PassPath));
+		Select NumOfPassenger= new Select(passenger);
+		List<WebElement> options =NumOfPassenger.getOptions();
+		for (WebElement option : options) {
+		    if (option.getText().equalsIgnoreCase(TotalPassenger))
+		    {
+		    	System.out.println(option.getText());
+		        option.click();
+		        System.out.println("Passenger Slected");
+		        break;
+		    }
+		}
+		
+	
+		//Departure  tr>td>select[name='fromPort'] table>tbody>tr>td>select
+		
+		WebElement Departure = driver.findElement(By.cssSelector(DaArRetAirPath+"[name='fromPort']"));
+		Select DeparturePort= new Select(Departure);
+		List<WebElement> Departureoptions =DeparturePort.getOptions();
+		for (WebElement option :Departureoptions) {
+		    if (option.getText().equalsIgnoreCase(ArrivalPortname))
+		    {
+		    	System.out.println(option.getText());
+		        option.click();
+		        System.out.println("Departure PortName Selected");
+		        break;
+		    }
+		}
+		
+		
+		//  Departdate
+		
+		WebElement Departdate = driver.findElement(By.cssSelector(DaArRetAirPath+"[name='fromMonth']"));
+		Select DepartdatePort= new Select(Departdate);
+		List<WebElement> Departdateoptions =DepartdatePort.getOptions();
+		for (WebElement option :Departureoptions) {
+		    if (option.getText().equalsIgnoreCase(Departdateday))
+		    {
+		    	System.out.println(option.getText());
+		        option.click();
+		        System.out.println("Depart Date Selected");
+		        break;
+		    }
+		}
+		
+		
+		
+	}
+
+}

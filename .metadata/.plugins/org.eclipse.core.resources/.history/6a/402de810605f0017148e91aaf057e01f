@@ -1,0 +1,60 @@
+package excelExportAndFileIO;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import ExcelTest.*;
+
+public class Mercury {
+
+	@Test(dataProvider="DDT")
+	public void SIGNIN(String User,String pwd)
+	{
+		// TODO Auto-generated method stub
+		WebDriver driver =new FirefoxDriver();
+		driver.manage().timeouts().implicitlyWait(1000, TimeUnit.SECONDS);
+		driver.get("http://localhost/servlets/com.mercurytours.servlet.WelcomeServlet");
+		driver.findElement(By.xpath("//td/table/tbody/tr/td[1]/a")).click();
+		driver.findElement(By.cssSelector("tr>td>input[name='userName']")).sendKeys(User);
+		driver.findElement(By.cssSelector("tr>td>input[name='password']")).sendKeys(pwd);
+
+	}
+	
+	@DataProvider(name = "DDT")
+	public Object[][] passData() throws Exception {
+
+		// Row1
+		/*
+		 * Object data[][]=new Object[1][3];
+		 * data[0][0]=objrep.getProperty("userNamevalue");
+		 * data[0][1]=objrep.getProperty("passwordvalue");
+		 * data[0][2]=objrep.getProperty("Cpasswordvalue");
+		 * 
+		 * 
+		 * return data;
+		 */
+
+		Excelconfig config = new Excelconfig();
+	    config.Excelconfigpath("C:\\Users\\Hituj Velukar\\Desktop\\DataDriven.xls");
+		int totalrow = config.getRowCount(0);
+		System.out.println(totalrow);
+		Object data[][] = new Object[totalrow][1];
+
+		for (int i = 0; i < totalrow; i++) {
+
+			data[i][0] = config.getData(0, i, 0);
+			data[i][1] = config.getData(0, i, 1);
+			data[i][2] = config.getData(0, i, 2);
+
+		}
+
+		return data;
+
+	}
+
+}

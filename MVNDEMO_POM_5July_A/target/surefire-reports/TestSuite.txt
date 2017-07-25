@@ -1,0 +1,35 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 9, Errors: 0, Skipped: 1, Time elapsed: 1.789 sec <<< FAILURE! - in TestSuite
+ConfirmFlight(com.pages.FlightBooker)  Time elapsed: 0.058 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.pages.FlightBooker.ConfirmFlight(FlightBooker.java:24)
+
+initialize(com.pages.FlightBooker)  Time elapsed: 0.051 sec  <<< FAILURE!
+java.lang.NullPointerException
+
+BookFlight(com.pages.FlightFinder)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.pages.FlightFinder.BookFlight(FlightFinder.java:26)
+
+initialize(com.pages.FlightFinder)  Time elapsed: 0.002 sec  <<< FAILURE!
+java.lang.NullPointerException
+
+initialize(com.pages.HomePage_Register)  Time elapsed: 0.004 sec  <<< FAILURE!
+java.lang.NullPointerException
+
+Login(com.pages.SignON)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.pages.SignON.Login(SignON.java:23)
+
+initialize(com.pages.SignON)  Time elapsed: 0.003 sec  <<< FAILURE!
+java.lang.NullPointerException
+
+initialize(com.pages.TestBase)  Time elapsed: 0.002 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.pages.TestBase.initialize(TestBase.java:65)
+
+teardown(com.pages.SignON)  Time elapsed: 0.138 sec  <<< FAILURE!
+java.lang.NullPointerException
+

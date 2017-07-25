@@ -1,0 +1,12 @@
+package pageFactory_TestCases;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class quickBookTest {
+
+	
+	WebDriver driver=new FirefoxDriver();
+	
+	
+}

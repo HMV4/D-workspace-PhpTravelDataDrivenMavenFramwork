@@ -1,0 +1,30 @@
+package pageFactory_TestCases;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Test;
+
+import pages.Quickbook;
+
+
+public class quickBookTest {
+
+	
+	@Test
+	public void quickBooking()
+	{
+		WebDriver driver=new FirefoxDriver();
+		driver.manage().window().maximize();
+		phpLogin.verifyValidLogin();
+		System.out.println("login success");
+		Quickbook quickBookObject= new Quickbook(driver);
+		Quickbook.quickBookButtonClick();
+		Quickbook.applyTax();
+		Quickbook.service();
+		Quickbook.nextButtonClick();
+		
+	}
+	
+	
+	
+}

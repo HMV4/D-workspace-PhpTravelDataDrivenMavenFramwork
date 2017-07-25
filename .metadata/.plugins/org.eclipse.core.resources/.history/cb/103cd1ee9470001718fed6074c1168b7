@@ -1,0 +1,36 @@
+package com.Mouse;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class mouseAndKeys {
+
+	public static void main(String args[])
+	
+	{
+		WebDriver driver = new FirefoxDriver();
+		driver.get("http://localhost/servlets/com.mercurytours.servlet.ReservationServlet");
+		driver.findElement(By.cssSelector(".mouseOut>a[href$='SignonServlet']")).click();
+		// send text in textbox using java script in selenium
+		JavascriptExecutor executor=(JavascriptExecutor)driver;
+		executor.executeScript("document.getElementsByName('name=userName').value='DDT1';");
+		/*driver.findElement(By.cssSelector("input[name$='Name']")).sendKeys();
+		driver.findElement(By.cssSelector("input[name^='pass']"))*/
+		
+		WebElement departFrom=driver.findElement(By.cssSelector
+				
+				
+				
+				("tr>td>select[name='fromPort']"));
+		
+		Actions ae= new Actions(driver);
+		
+		ae.moveToElement(departFrom).click().perform();
+		
+	}
+	
+}

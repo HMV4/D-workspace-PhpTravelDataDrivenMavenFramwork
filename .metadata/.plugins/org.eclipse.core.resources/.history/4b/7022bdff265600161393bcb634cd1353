@@ -1,0 +1,47 @@
+package com.sample;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class ULdemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		WebDriver driver =new FirefoxDriver();
+		driver.get("file:///D:/Selenium%20Softwares/Tables/SpiceJet/SpiceJet/www.spicejet.com/index.html");
+		driver.findElement(By.xpath(".//*[@id='ctl00_mainContent_ddl_originStation1_CTXT']")).click();
+		
+		List<WebElement> UL = driver.findElements(By.xpath("//*[@id='dropdownGroup1']/div/ul"));
+		System.out.println(UL.size());
+		
+		for(int i=1;i<=UL.size();i++)
+		{
+			
+			List<WebElement> LI = driver.findElements(By.xpath("//UL["+i+"]/li"));
+			
+			for(int j=1;j<=LI.size();j++)
+			{
+				
+				WebElement cell =driver.findElement(By.xpath("//UL["+i+"]/li["+j+"]/a"));
+				
+				System.out.println(cell.getText());
+				
+			}
+		}
+		
+	}
+
+
+
+
+	}
+
+
+
+
+	

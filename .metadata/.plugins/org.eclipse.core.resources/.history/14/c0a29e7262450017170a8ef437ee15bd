@@ -1,0 +1,35 @@
+package com.STOCK;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class Stock {
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+	 WebDriver driver = new FirefoxDriver();
+	 driver.get("http://182.59.129.79:8008/pages/home.html");
+	 
+	 WebDriverWait wait= new WebDriverWait(driver,20);
+	 
+	WebElement element =wait.until(ExpectedConditions.elementToBeClickable((By.xpath("//div[2]/header/div/ul[1]/li/a/i"))));
+	element.click();
+	System.out.println("Mesh Icon Clicked");
+	 
+	 
+	 String dash=driver.findElement(By.xpath("//nav/ul[1]/li[1]/a/span")).getAttribute("name");
+	 
+	 if(dash.equals("Dashboard"))
+	 {
+		 System.out.println("Test Passes");
+	 }
+
+
+	}
+
+}

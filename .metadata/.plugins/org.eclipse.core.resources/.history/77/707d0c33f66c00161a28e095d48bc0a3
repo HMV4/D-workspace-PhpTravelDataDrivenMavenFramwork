@@ -1,0 +1,15 @@
+
+public class Caller {
+
+	
+	public static void main(String[] args) {
+		
+		ExcelUtility.setWorkBook();
+		ExcelUtility.setWorkSheet("Login");
+		ExcelUtility.setRow(3);
+		System.out.println(ExcelUtility.getCellData("UserName"));;
+		System.out.println(ExcelUtility.getCellData("Password"));;
+		System.out.println(ExcelUtility.getCellData(0));;
+		
+	}
+}

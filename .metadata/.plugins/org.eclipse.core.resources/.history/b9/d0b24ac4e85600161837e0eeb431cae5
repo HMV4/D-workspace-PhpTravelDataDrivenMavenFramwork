@@ -1,0 +1,17 @@
+package com.sample;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Redbus {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stubdr
+		
+		WebDriver driver =new FirefoxDriver();
+		driver.get("file:///D:/Selenium%20Softwares/Tables/redBus%20%20%20Online%20Bus%20Ticket%20Booking,%20Book%20Volvo%20AC%20Bus%20Tickets,%20Reservation.htm");
+		
+
+	}
+
+}

@@ -1,0 +1,43 @@
+package com.sample;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class SIGNON{
+	
+	WebDriver driver =new FirefoxDriver();
+
+	
+		// LOGIN
+	public  void Login() throws InterruptedException
+	{
+		driver.findElement(By.cssSelector("tr>td>input[name='userName']")).sendKeys("HITUJ1");
+		driver.findElement(By.cssSelector("tr>td>input[name='password']")).sendKeys("HITUJ1");
+		driver.findElement(By.cssSelector("tr>td>input[name='login']")).click();
+		Thread.sleep(10000);
+		System.out.println("SIGN IN SUCCESSFULLY");
+		
+	}
+	
+	
+	public void BookFlight()
+	{
+		
+		// Trip Type
+		
+		driver.findElement(By.cssSelector("input[value='roundtrip']")).clear();
+		
+		//passenger
+WebElement passenger = driver.findElement(By.cssSelector("tr>td>input"));
+		
+		Select NumOfPassenger= new Select(passenger);
+		NumOfPassenger.selectByIndex(2);
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [MercuryE2E]" parallel="none">
+  <test name="HOME PAGE REGISTER(failed)" parallel="none">
+    <classes>
+      <class name="com.pages.HomePage_Register">
+        <methods>
+          <include name="Register"/>
+        </methods>
+      </class> <!-- com.pages.HomePage_Register -->
+      <class name="com.pages.SignON">
+        <methods>
+          <include name="teardown"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- com.pages.SignON -->
+    </classes>
+  </test> <!-- HOME PAGE REGISTER(failed) -->
+</suite> <!-- Failed suite [MercuryE2E] -->

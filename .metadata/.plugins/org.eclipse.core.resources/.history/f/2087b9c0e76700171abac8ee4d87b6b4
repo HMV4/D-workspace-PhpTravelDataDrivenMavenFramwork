@@ -1,0 +1,14 @@
+
+public class Replace {
+	public static void main(String [] args) {
+		
+		
+		String value = "ABCASS@HHKK";
+			int posi = value.indexOf("S");
+			value = value.substring(0, posi);
+			posi = value.lastIndexOf(".");   //seperates substrins from word(abcA)	
+			value = value.substring(posi + 3);
+			System.out.println(value);
+	}
+	
+}

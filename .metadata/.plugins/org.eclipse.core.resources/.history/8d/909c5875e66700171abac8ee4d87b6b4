@@ -1,0 +1,14 @@
+
+public class Replace {
+	public static void main(String [] args) {
+		
+		
+		String value = "ABCASSHHKK";
+			int posi = value.indexOf("A");
+			value = value.substring(0, posi);
+			posi = value.lastIndexOf(".");	
+			value = value.substring(posi + 1);
+			System.out.println(value);
+	}
+	
+}

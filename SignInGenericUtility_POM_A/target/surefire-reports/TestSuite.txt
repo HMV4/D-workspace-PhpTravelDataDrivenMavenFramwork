@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 1.093 sec <<< FAILURE! - in TestSuite
+initialize(Tests.SignIN)  Time elapsed: 0.851 sec  <<< FAILURE!
+java.io.FileNotFoundException: D:\workspace\SignInGenericUtility_POM_A\src\com\Config\config.properties (The system cannot find the path specified)
+

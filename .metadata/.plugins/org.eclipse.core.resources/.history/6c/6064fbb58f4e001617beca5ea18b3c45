@@ -1,0 +1,13 @@
+
+public class DigitDisplay {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stubnum
+		
+		int num =125;
+		int Result = (num%10);
+		System.out.println("Second And Last Dsgits are ::" +Result);
+
+	}
+
+}

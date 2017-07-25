@@ -1,0 +1,17 @@
+
+public class Factorial {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int result = 0;
+		int fact = 0;
+		
+		for(int i=0;i<=fact;i++)
+		{
+			result=result*i;
+			System.out.println("Factorial of " + fact + "is:" + result );
+			
+		}
+	}
+
+}

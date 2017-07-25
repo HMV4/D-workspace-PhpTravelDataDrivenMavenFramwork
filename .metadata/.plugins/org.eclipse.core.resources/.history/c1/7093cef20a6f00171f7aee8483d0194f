@@ -1,0 +1,88 @@
+package com.pageFactory;
+
+import java.util.List;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
+
+import com.pages.TestBase;
+
+public class flightFinderPage extends TestBase {
+
+	public static void selectTripType() {
+
+		// TRIP TYPE
+		// PAGE TITLE
+		System.out.println(driver.getTitle());
+		// common variable 1
+		String triptype = getCSSpath("Rtrip").getAttribute("value");
+
+		System.out.println(triptype);
+
+		getCSSpath("Rtrip").click();
+
+	}
+
+	public static void selectPassenger(String totalPassenger) {
+		// passenger
+		WebElement passenger = getCSSpath("PassPath");
+		Select NumOfPassenger = new Select(passenger);
+		List<WebElement> options = NumOfPassenger.getOptions();
+		for (WebElement option : options) {
+			if (option.getText().equalsIgnoreCase(totalPassenger)) {
+				System.out.println(option.getText());
+				option.click();
+				System.out.println("Passenger Slected");
+				break;
+			}
+		}
+
+	}
+
+	
+	public static void selectDeparture(String DepartPortname)
+	{
+		
+		// ###DEPARTURE DETAILS#######
+
+					//DepartFrom tr>td>select[name='fromPort'] table>tbody>tr>td>select
+
+					WebElement Departure = getCSSpath("DepartFrom");
+					Select DeparturePort= new Select(Departure);
+					List<WebElement> Departureoptions =DeparturePort.getOptions();
+					for (WebElement option :Departureoptions) {
+						if (option.getText().equalsIgnoreCase(DepartPortname))
+						{
+							System.out.println(option.getText());
+							option.click();
+							System.out.println("Departure PortName Selected");
+							break;
+						}
+					}
+
+		
+	}
+	
+	
+	
+	
+	public static void selectDpartMonth(String Departmonthname )
+	{
+			//  DepartMOnth DepartMonth
+			WebElement Departmonths = getCSSpath("DepartMonth");
+			Select DepartmonthPort= new Select(Departmonths);
+			List<WebElement> Departmonthoptions =DepartmonthPort.getOptions();
+			for (WebElement option :Departmonthoptions) {
+				if (option.getText().equalsIgnoreCase(Departmonthname))
+				{
+					System.out.println(option.getText());
+					option.click();
+					System.out.println("Depart MOnth Selected");
+					break;
+				}
+			}
+
+	
+	}
+
+}

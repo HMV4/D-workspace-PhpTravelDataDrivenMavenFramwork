@@ -1,0 +1,27 @@
+package com.sample;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Goibibo {
+	
+	static WebDriver driver =new FirefoxDriver();
+	
+	WebDriver driver=new FirefoxDriver();
+	driver.get("D:/Selenium%20Softwares/Tables/SpiceJet/SpiceJet/www.spicejet.com/index.html");
+	driver.manage().window().maximize();
+	driver.findElement(By.id("ctl00_mainContent_ddl_originStation1_CTXT")).click();
+	
+	List<WebElement> rows=driver.findElements(By.xpath("//div[3]/div[1]/div/ul"));
+	for (int i = 1; i <=rows.size(); i++) {
+		List<WebElement> cols=driver.findElements(By.xpath("//div[3]/div[1]/div/ul["+i+"]/li"));
+		for (int j = 1; j <=cols.size(); j++) {
+			WebElement e=driver.findElement(By.xpath("//div[3]/div[1]/div/ul["+i+"]/li["+j+"]"));
+			System.out.println(e.getText());
+		}
+	}
+}

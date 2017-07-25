@@ -1,0 +1,18 @@
+package pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class Quickbook {
+	
+	
+	WebDriver driver;
+	
+	By quickBookButton=By.xpath(".//*[@id='content']/div[1]/div[1]");
+	
+	//----------------Apply Tax
+    By applyTax=By.name("applytax");
+   
+
+}

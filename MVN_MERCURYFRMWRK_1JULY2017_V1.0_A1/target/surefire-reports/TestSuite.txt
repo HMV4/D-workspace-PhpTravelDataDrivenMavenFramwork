@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.154 sec <<< FAILURE!
+initialize(com.pages.TestBase)  Time elapsed: 0.8 sec  <<< FAILURE!
+java.io.FileNotFoundException: D:\workspace\MVN_MERCURYFRMWRK_1JULY2017_V1.0_A1\src\com\Config\config.properties (The system cannot find the path specified)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at com.pages.TestBase.initialize(TestBase.java:40)
+

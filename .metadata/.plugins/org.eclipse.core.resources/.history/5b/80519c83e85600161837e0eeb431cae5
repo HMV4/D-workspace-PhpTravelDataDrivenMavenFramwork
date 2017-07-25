@@ -1,0 +1,40 @@
+package com.sample;
+
+import java.awt.List;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class spicejet {
+
+	
+	static WebDriver driver =new FirefoxDriver();
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		
+		driver.get("file:///D:/Selenium%20Softwares/Tables/SpiceJet/SpiceJet/www.spicejet.com/index.html");
+		//driver.findElement(By.xpath(".//*[@id='ctl00_mainContent_ddl_originStation1_CTXT']")).click();
+		
+		driver.findElement(By.xpath(".//*[@id='ctl00_mainContent_ddl_originStation1_CTXT']")).click();
+		driver.findElement(By.xpath(".//*[@id='dropdownGroup1']/div/ul[1]/li[1]/a")).click();
+		System.out.println("Grt");
+		driver.findElement(By.xpath(".//*[@id='ctl00_mainContent_ddl_destinationStation1_CTXT']")).click();
+		WebElement ele=driver.findElement(By.xpath(".//*[@id='dropdownGroup1']/div/ul[1]/li[6]/a"));
+		System.out.println(ele.getText());
+		ele.click();
+		
+
+	}
+	
+	
+	
+	
+	
+	
+
+}

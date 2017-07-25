@@ -1,0 +1,50 @@
+package com.pageFactory;
+
+import java.util.List;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
+import ExcelLib.*;
+public class flightFinderPage {
+
+	public static void selectTripType() {
+
+		// TRIP TYPE
+		// driver.findElement(By.cssSelector("input[value='oneway']")).click();
+		// PAGE TITLE
+		System.out.println(driver.getTitle());
+		// common variable 1
+		String triptype = getCSSpath("Rtrip").getAttribute("value");
+
+		System.out.println(triptype);
+		// driver.findElement(By.cssSelector("input[value='roundtrip']")).click();
+		// Round Trip
+		getCSSpath("Rtrip").click();
+
+		// ONe Way Trip
+		// getCSSpath("Otrip").click();
+
+	}
+	
+	
+	
+	public static void selectPassenger()
+	{
+		//passenger 
+		WebElement passenger = getCSSpath("PassPath");
+		Select NumOfPassenger= new Select(passenger);
+		List<WebElement> options =NumOfPassenger.getOptions();
+		for (WebElement option : options) {
+			if (option.getText().equalsIgnoreCase(objrep.getProperty("TotalPassenger")))
+			{
+				System.out.println(option.getText());
+				option.click();
+				System.out.println("Passenger Slected");
+				break;
+			}
+		}
+
+		
+	}
+
+}

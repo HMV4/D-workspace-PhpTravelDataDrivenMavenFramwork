@@ -1,0 +1,37 @@
+package com.Mouse;
+
+import java.util.Iterator;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class brokenLinks {
+
+	
+	public static void main(String [] args)
+	{
+		WebDriver driver = new FirefoxDriver();
+		String url="";
+
+		driver.get("http://localhost/servlets/com.mercurytours.servlet.ReservationServlet");
+		
+		List<WebElement> links = driver.findElements(By.tagName("a"));
+		
+		Iterator<WebElement> it= links.iterator();
+		
+		while(it.hasNext())
+		{
+			url=it.next().getAttribute("href");
+			System.out.println(":::::::::>>>>>>>"+url);
+			
+			
+		}
+		
+		
+	}
+
+}

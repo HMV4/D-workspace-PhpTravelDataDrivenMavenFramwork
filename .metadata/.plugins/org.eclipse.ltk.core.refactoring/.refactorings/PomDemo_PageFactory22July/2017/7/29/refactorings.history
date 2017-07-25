@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;com.pageFactory.loginPages.java&apos; to &apos;signOnPage.java&apos;&#x0D;&#x0A;- Original project: &apos;PomDemo_PageFactory22July&apos;&#x0D;&#x0A;- Original element: &apos;com.pageFactory.loginPages.java&apos;&#x0D;&#x0A;- Renamed element: &apos;com.pageFactory.signOnPage.java&apos;" description="Rename compilation unit &apos;loginPages.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;com.pageFactory{loginPages.java" name="signOnPage.java" references="false" stamp="1500726420769" version="1.0"/>
+</session>

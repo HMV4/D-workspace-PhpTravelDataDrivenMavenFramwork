@@ -1,0 +1,42 @@
+package pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class Quickbook {
+	
+	
+	WebDriver driver;
+	
+	By quickBookButton=By.xpath(".//*[@id='content']/div[1]/div[1]");
+	
+	//----------------Apply Tax------------------
+    By applyTax=By.name("applytax");
+    
+    //------------Service-------------------------
+   By service = By.name("service");
+   
+   //-------------Next Button--------------------
+   By nextButton=By.name("service");
+   
+   
+   public Quickbook(WebDriver driver)
+	{
+		
+		this.driver=driver;
+	}
+   
+   public void quickBookButtonClick()
+   {
+	   //Anonymous class
+	   new WebDriverWait(driver, 15)
+       .until(ExpectedConditions.elementToBeClickable(quickBookButton));
+
+	   driver.findElement(quickBookButton).click();
+	   
+   }
+
+}

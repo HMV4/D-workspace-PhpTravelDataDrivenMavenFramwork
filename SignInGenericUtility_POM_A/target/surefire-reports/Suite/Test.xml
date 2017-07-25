@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="Hituj" name="Tests.SignIN" tests="1" failures="0" timestamp="5 Jul 2017 09:26:39 GMT" time="0.029" errors="0">
+  <testcase name="@BeforeSuite initialize" time="0.0" classname="Tests.SignIN">
+    <failure type="java.io.FileNotFoundException" message="D:\workspace\SignInGenericUtility_POM_A\src\com\Config\config.properties (The system cannot find the path specified)">
+      <![CDATA[java.io.FileNotFoundException: D:\workspace\SignInGenericUtility_POM_A\src\com\Config\config.properties (The system cannot find the path specified)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at Tests.TestBase.initialize(TestBase.java:37)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+... Removed 15 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="Login" time="0.002" classname="Tests.SignIN">
+    <skipped/>
+  </testcase>
+</testsuite>

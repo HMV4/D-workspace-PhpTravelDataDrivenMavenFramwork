@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [MercuryE2E]" parallel="none">
+  <test name="BOOK FLIGHT(failed)" parallel="none">
+    <classes>
+      <class name="com.pages.FlightBooker">
+        <methods>
+          <include name="ConfirmFlight"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- com.pages.FlightBooker -->
+    </classes>
+  </test> <!-- BOOK FLIGHT(failed) -->
+</suite> <!-- Failed suite [MercuryE2E] -->

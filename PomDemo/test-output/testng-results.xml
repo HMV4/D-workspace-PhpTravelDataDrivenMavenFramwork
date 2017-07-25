@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="MercuryE2E" duration-ms="337648" started-at="2017-07-22T11:37:41Z" finished-at="2017-07-22T11:43:18Z">
+    <groups>
+    </groups>
+    <test name="TEST BASE" duration-ms="44" started-at="2017-07-22T11:37:41Z" finished-at="2017-07-22T11:37:41Z">
+    </test> <!-- TEST BASE -->
+    <test name="HOME PAGE REGISTER" duration-ms="229092" started-at="2017-07-22T11:37:41Z" finished-at="2017-07-22T11:41:30Z">
+      <class name="com.pages.HomePage_Register">
+        <test-method status="PASS" signature="Register(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.pages.HomePage_Register@e9ecc8]" name="Register" duration-ms="93225" started-at="2017-07-22T17:09:44Z" data-provider="Register" finished-at="2017-07-22T17:11:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DDT1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[DDT1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[DDT1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Register -->
+      </class> <!-- com.pages.HomePage_Register -->
+    </test> <!-- HOME PAGE REGISTER -->
+    <test name="VALID SIGNIN/SIGNON " duration-ms="106579" started-at="2017-07-22T11:41:32Z" finished-at="2017-07-22T11:43:18Z">
+      <class name="com.pages.SignON">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:com.pages.SignON@1b5b441]" name="initialize" is-config="true" duration-ms="73403" started-at="2017-07-22T17:06:23Z" finished-at="2017-07-22T17:07:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="Login(java.lang.String, java.lang.String)[pri:0, instance:com.pages.SignON@1b5b441]" name="Login" duration-ms="47925" started-at="2017-07-22T17:12:30Z" data-provider="SignON" finished-at="2017-07-22T17:13:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DDT1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[DDT1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.pages.SignON@1b5b441]" name="teardown" is-config="true" duration-ms="39" started-at="2017-07-22T17:13:18Z" finished-at="2017-07-22T17:13:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.pages.SignON -->
+    </test> <!-- VALID SIGNIN/SIGNON  -->
+  </suite> <!-- MercuryE2E -->
+</testng-results>

@@ -1,0 +1,53 @@
+import com.sun.jna.platform.win32.Sspi;
+
+public class stringManipulations {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+
+		String s = "THIS IS";
+		String rev = "";
+		int count = 0;
+		String StringsplitResult = "";
+		char dup = s.charAt(2);
+		
+		for (int i = s.length() - 1; i >= 0; i--) {
+			rev = rev + s.charAt(i);
+
+		}
+		
+
+		for (int i = 0; i <= s.length()-1; i++) {
+
+			if(dup==s.charAt(i))
+			{
+				
+				count=count+1;
+			}
+		}
+		
+
+		String [] splits=s.split("");
+		for(int j=0;j<=splits.length-1;j++)
+		{
+				
+		 System.out.println(splits[j]);
+	
+		}
+		
+		s.replace("IS", "YY");
+		System.out.println(s);
+        String sub="IS";
+		int pos=s.indexOf(sub);
+		System.out.println(pos);
+		System.out.println(s.charAt(pos+sub.length()));
+		String rep=s.replace(s,"TEACHER");
+		System.out.println(rep);
+		System.out.println(rev);
+		System.out.println();
+		System.out.println(count);
+
+	}
+
+}

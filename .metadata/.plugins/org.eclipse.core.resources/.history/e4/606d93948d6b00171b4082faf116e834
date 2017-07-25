@@ -1,0 +1,28 @@
+package pageFactory_TestCases;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.annotations.Test;
+
+import pages.PHPlogin;
+
+public class phpLogin {
+
+	@Test
+	public void verifyValidLogin()
+	{
+		System.setProperty("webdriver.chrome.driver","D:\\Selenium Softwares\\chromedriver_win32\\chromedriver.exe");
+		ChromeOptions options= new ChromeOptions();
+		options.addArguments("--disable-extensions");
+		WebDriver driver = new ChromeDriver(options);
+		driver.manage().window().maximize();
+		driver.get("http://www.phptravels.net/admin");
+		PHPlogin login = new PHPlogin(driver);
+		login.username();
+		login.password();
+		login.loginButtonClick();
+		
+		
+	}
+}

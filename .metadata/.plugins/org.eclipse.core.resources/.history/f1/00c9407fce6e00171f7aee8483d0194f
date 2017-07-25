@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MercuryE2E" parallel="none">
+  <test name="TEST BASE">
+    <classes>
+      <class name="com.pages.TestBase"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <!-- <test name="HOME PAGE REGISTER">
+    <classes>
+      <class name="com.pages.HomePage_Register"/>
+    </classes>
+  </test> Test -->
+  
+  <test name="VALID SIGNIN/SIGNON ">
+    <classes>
+      <class name="com.pages.SignON"/>
+    </classes>
+  </test> <!-- Test -->
+  
+ <!--  <test name="FIND FLIGHT">
+    <classes>
+      <class name="com.pages.FlightFinder"/>
+    </classes>
+  </test> Test
+  
+  
+  <test name="BOOK FLIGHT">
+    <classes>
+      <class name="com.pages.FlightBooker"/>
+    </classes>
+  </test> Test -->
+  
+
+</suite> <!-- Suite -->

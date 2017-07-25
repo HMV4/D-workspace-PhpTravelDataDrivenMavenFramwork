@@ -1,0 +1,27 @@
+package com.sample;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Frame {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+	
+
+			WebDriver driver=new FirefoxDriver();
+			driver.get("file:///D:/Selenium%20Softwares/31July2016/WebPages/Frames.htm");
+
+			driver.switchTo().frame("packageFrame");
+			driver.findElement(By.linkText("AbstractWebDriverEventListener")).click();
+
+			driver.switchTo().frame("packageListFrame");
+			driver.findElement(By.linkText("com.thoughtworks.selenium")).click();
+
+		}
+	}
+
+

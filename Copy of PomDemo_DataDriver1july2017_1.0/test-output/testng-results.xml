@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="MercuryE2E" duration-ms="24262" started-at="2017-07-01T16:18:30Z" finished-at="2017-07-01T16:18:54Z">
+    <groups>
+    </groups>
+    <test name="TEST BASE" duration-ms="14" started-at="2017-07-01T16:18:30Z" finished-at="2017-07-01T16:18:30Z">
+    </test> <!-- TEST BASE -->
+    <test name="HOME PAGE REGISTER" duration-ms="6888" started-at="2017-07-01T16:18:30Z" finished-at="2017-07-01T16:18:37Z">
+      <class name="com.pages.HomePage_Register">
+        <test-method status="PASS" signature="Register(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.pages.HomePage_Register@11bdb5c]" name="Register" duration-ms="6864" started-at="2017-07-01T21:48:30Z" data-provider="getData" finished-at="2017-07-01T21:48:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[HMV95]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[HMVANJ95]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[HMVANJ95]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Register -->
+      </class> <!-- com.pages.HomePage_Register -->
+    </test> <!-- HOME PAGE REGISTER -->
+    <test name="VALID SIGNIN/SIGNON " duration-ms="3062" started-at="2017-07-01T16:18:37Z" finished-at="2017-07-01T16:18:40Z">
+      <class name="com.pages.SignON">
+        <test-method status="PASS" signature="Login()[pri:0, instance:com.pages.SignON@1f61628]" name="Login" duration-ms="3052" started-at="2017-07-01T21:48:37Z" finished-at="2017-07-01T21:48:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+      </class> <!-- com.pages.SignON -->
+    </test> <!-- VALID SIGNIN/SIGNON  -->
+    <test name="FIND FLIGHT" duration-ms="11551" started-at="2017-07-01T16:18:40Z" finished-at="2017-07-01T16:18:51Z">
+      <class name="com.pages.FlightFinder">
+        <test-method status="PASS" signature="BookFlight()[pri:0, instance:com.pages.FlightFinder@1b8f764]" name="BookFlight" duration-ms="11543" started-at="2017-07-01T21:48:40Z" finished-at="2017-07-01T21:48:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BookFlight -->
+      </class> <!-- com.pages.FlightFinder -->
+    </test> <!-- FIND FLIGHT -->
+    <test name="BOOK FLIGHT" duration-ms="2653" started-at="2017-07-01T16:18:51Z" finished-at="2017-07-01T16:18:54Z">
+      <class name="com.pages.FlightBooker">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:com.pages.FlightBooker@a4a3c9]" name="initialize" is-config="true" duration-ms="13016" started-at="2017-07-01T21:48:17Z" finished-at="2017-07-01T21:48:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="ConfirmFlight()[pri:0, instance:com.pages.FlightBooker@a4a3c9]" name="ConfirmFlight" duration-ms="2646" started-at="2017-07-01T21:48:51Z" finished-at="2017-07-01T21:48:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ConfirmFlight -->
+      </class> <!-- com.pages.FlightBooker -->
+    </test> <!-- BOOK FLIGHT -->
+  </suite> <!-- MercuryE2E -->
+</testng-results>

@@ -1,0 +1,26 @@
+package com.STOCK;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Stock {
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+	 WebDriver driver = new FirefoxDriver();
+	 driver.get("http://182.59.129.79:8008/pages/home.html");
+	 driver.manage().timeouts().implicitlyWait(1000, TimeUnit.SECONDS);
+	 
+	 driver.findElement(By.xpath("//div[2]/header/div/ul[1]/li/a/i")).click();
+	 //System.out.println("Clicked");
+	 
+	 
+	 
+	 driver.quit();
+
+
+	}
+
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="110" started-at="2017-05-29T09:39:33Z" finished-at="2017-05-29T09:39:33Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="110" started-at="2017-05-29T09:39:33Z" finished-at="2017-05-29T09:39:33Z">
+      <class name="com.TestNg.Class1">
+        <test-method status="PASS" signature="X1()[pri:0, instance:com.TestNg.Class1@14c01ac]" name="X1" duration-ms="5" started-at="2017-05-29T15:09:33Z" finished-at="2017-05-29T15:09:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- X1 -->
+        <test-method status="PASS" signature="m1()[pri:0, instance:com.TestNg.Class1@14c01ac]" name="m1" duration-ms="5" started-at="2017-05-29T15:09:33Z" finished-at="2017-05-29T15:09:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m1 -->
+      </class> <!-- com.TestNg.Class1 -->
+      <class name="com.TestNg.Class3">
+        <test-method status="PASS" signature="m3()[pri:0, instance:com.TestNg.Class3@1513f3]" name="m3" duration-ms="60" started-at="2017-05-29T15:09:33Z" finished-at="2017-05-29T15:09:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m3 -->
+      </class> <!-- com.TestNg.Class3 -->
+      <class name="com.TestNg.Class2">
+        <test-method status="PASS" signature="X2()[pri:0, instance:com.TestNg.Class2@3d899a]" name="X2" duration-ms="0" started-at="2017-05-29T15:09:33Z" finished-at="2017-05-29T15:09:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- X2 -->
+        <test-method status="PASS" signature="m2()[pri:0, instance:com.TestNg.Class2@3d899a]" name="m2" duration-ms="0" started-at="2017-05-29T15:09:33Z" finished-at="2017-05-29T15:09:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m2 -->
+      </class> <!-- com.TestNg.Class2 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

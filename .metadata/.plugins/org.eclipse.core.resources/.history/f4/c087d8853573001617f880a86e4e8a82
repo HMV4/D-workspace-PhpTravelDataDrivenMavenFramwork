@@ -1,0 +1,24 @@
+package com.TestNg;
+
+import org.testng.annotations.Test;
+
+public class Class1 {
+	
+		// TODO Auto-generated method stub
+@Test
+public void m1()
+{
+	
+System.out.println("WOW M1");
+}
+	
+
+@Test
+public void X1()
+{
+	
+System.out.println("WOW X1");
+}
+
+
+}

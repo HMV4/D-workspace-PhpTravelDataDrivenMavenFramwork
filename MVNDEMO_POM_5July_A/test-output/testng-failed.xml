@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.pages.SignON">
+        <methods>
+          <include name="Login"/>
+          <include name="teardown"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- com.pages.SignON -->
+      <class name="com.pages.FlightBooker">
+        <methods>
+          <include name="ConfirmFlight"/>
+          <include name="teardown"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- com.pages.FlightBooker -->
+      <class name="com.pages.HomePage_Register">
+        <methods>
+          <include name="Register"/>
+          <include name="teardown"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- com.pages.HomePage_Register -->
+      <class name="com.pages.FlightFinder">
+        <methods>
+          <include name="BookFlight"/>
+          <include name="teardown"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- com.pages.FlightFinder -->
+      <class name="com.pages.TestBase">
+        <methods>
+          <include name="teardown"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- com.pages.TestBase -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

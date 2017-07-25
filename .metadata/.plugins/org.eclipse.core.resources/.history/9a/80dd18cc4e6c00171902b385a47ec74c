@@ -1,0 +1,22 @@
+
+public class abstractDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		public static void demo();
+		abstract int lenght();
+		
+	}
+
+	private static void lenght() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private static void demo() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
