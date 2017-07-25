@@ -37,6 +37,7 @@ public class mouseAndKeys {
 		
 		// Sign on button click
 		executor.executeScript("document.getElementsByName('login')[0].click();");
+
 		/*
 		 * driver.findElement(By.cssSelector("input[name$='Name']")).sendKeys();
 		 * driver.findElement(By.cssSelector("input[name^='pass']"))
