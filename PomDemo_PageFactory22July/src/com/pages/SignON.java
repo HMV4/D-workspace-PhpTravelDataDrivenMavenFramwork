@@ -31,7 +31,13 @@ public class SignON extends TestBase {
 		} catch (Exception e) {
 			System.out.println(e);
 
+		}finally{
+			
+	 System.gc();
+			
+			
 		}
+		
 		
 		
 		

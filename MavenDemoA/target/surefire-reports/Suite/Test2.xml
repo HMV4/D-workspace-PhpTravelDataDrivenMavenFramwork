@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="Hituj" name="com.TestcaseGroup.SingleGroupTest" tests="2" failures="0" timestamp="6 Aug 2017 19:47:35 GMT" time="0.003" errors="0">
+  <testcase name="register" time="0.0" classname="com.TestcaseGroup.SingleGroupTest"/>
+  <testcase name="viewProduct" time="0.001" classname="com.TestcaseGroup.SingleGroupTest"/>
+</testsuite>

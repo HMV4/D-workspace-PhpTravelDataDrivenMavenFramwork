@@ -26,14 +26,12 @@ public class fibonacci implements Myinterface {
 		
 	}
 
-	@Override
 	public void show() {
 		// TODO Auto-generated method stub
 		System.out.println("SHOW");
 		
 	}
 
-	@Override
 	public void display() {
 		// TODO Auto-generated method stub
 		System.out.println("Display");

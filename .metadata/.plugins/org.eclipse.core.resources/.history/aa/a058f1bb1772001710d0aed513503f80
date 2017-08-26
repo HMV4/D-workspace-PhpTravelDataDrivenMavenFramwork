@@ -1,0 +1,40 @@
+package inside;
+
+import java.util.Scanner;
+
+public class maxNumArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+int max ,totalnumbers;
+
+
+
+		Scanner s= new Scanner(System.in);	
+		System.out.println("Enter  total num in the array");
+		totalnumbers = s.nextInt();
+		int a[]= new int[totalnumbers];
+		for(int i=0;i<=totalnumbers;i++)
+		{
+			
+			
+			a[i]=s.nextInt();
+			
+		}
+		
+		max=a[0];
+		
+		for(int i=0;i<=totalnumbers;i++)
+		{
+			if(max < a[i])
+			{
+				
+			    max=a[i];	
+			}
+			
+		}
+		
+		System.out.println("MAX VALUE IS " + max);
+	}
+
+}

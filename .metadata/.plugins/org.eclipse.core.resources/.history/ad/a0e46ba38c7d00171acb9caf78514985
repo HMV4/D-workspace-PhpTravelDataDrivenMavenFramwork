@@ -1,0 +1,80 @@
+package inside;
+
+import java.util.Scanner;
+
+public class primenumber {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		boolean isprime=true;
+		
+		Scanner sc= new Scanner(System.in);
+		
+		System.out.println("totnumber");
+		int num=  sc.nextInt();
+		
+		int arrnum []= new int[num];
+		
+		
+		//int num =29;
+				
+		for(int i=0;i<arrnum.length;i++)
+		{
+			
+			System.out.println("Enter numbers");
+			
+			arrnum [i]=sc.nextInt();
+			
+			/*if(arrnum[i-2].valueOf()%i==0)
+			{
+				
+				
+				isprime=false;
+				break;
+				
+			}
+			
+			
+			
+			if(isprime)
+			{
+				System.out.println(" prime num" + num);
+					
+				
+			}
+			
+			else{System.out.println("Not Prime");}*/
+		}
+		
+		
+		for(int i=2;i<arrnum.length;i++)
+		{
+			
+			System.out.println("Enter numbers");
+		
+			
+			if(arrnum[i-2]%i==0)
+			{
+				
+				
+				isprime=false;
+				break;
+				
+			}
+			
+			
+			
+			if(isprime)
+			{
+				System.out.println(" prime num" + arrnum[i-2]);
+					
+				
+			}
+			
+			else{System.out.println("Not Prime"+arrnum[i-2]);}
+		}
+
+	}
+
+}

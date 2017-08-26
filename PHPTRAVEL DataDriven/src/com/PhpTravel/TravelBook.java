@@ -215,7 +215,7 @@ import SnapShotUtility.SnapshotUtilty;
             // Actions-------------------------------------------------------------------
             Actions ae = new Actions(driver);
            // wait_10.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[3]/ul[2]/li[2]/a/i")));
-            WebElement mouseover = driver.findElement(By.xpath("//div[3]/ul[2]/li[2]/a/i"));
+            WebElement mouseover = driver.findElement(By.xpath("//div[3]/ul[2]/li[2]/a/i")).g;
             Action mouseactions = ae.moveToElement(mouseover).build();
            // mouseactions.perform();
            // System.out.println("Mouse moved to pulldownmenu");

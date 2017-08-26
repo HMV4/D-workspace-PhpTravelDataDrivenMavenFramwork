@@ -3,7 +3,7 @@ package com.Mouse;
 import java.net.HttpURLConnection;
 import java.util.Iterator;
 import java.util.List;
-
+import java.net.*;
 import org.apache.http.HttpClientConnection;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -11,9 +11,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 
+import com.gargoylesoftware.htmlunit.javascript.host.URL;
+
 public class brokenLinks {
 
-	
 	public static void main(String [] args)
 	{
 		WebDriver driver = new FirefoxDriver();
@@ -37,11 +38,12 @@ public class brokenLinks {
 			{
 				
 				System.out.println(" not configured or tag is empty");
+				continue;
 			}
-			continue;
+			
 			
 		
-		
+		}
 		
 		if(!url.startsWith(homepage))
 		{
@@ -50,7 +52,28 @@ public class brokenLinks {
 			
 		}
 		
-		
-		
-	}
-	
+		 try {
+             urlCon = (HttpURLConnection)(((Object) new URL()).openConnection());
+             
+             urlCon.setRequestMethod("HEAD");
+             
+             urlCon.connect();
+             
+             respCode = urlCon.getResponseCode();
+             
+             if(respCode >= 400){
+                 System.out.println(url+" is a broken link");
+             }
+             else{
+                 System.out.println(url+" is a valid link");
+             }
+                 
+         } catch (MalformedURLException e) {
+             // TODO Auto-generated catch block
+             e.printStackTrace();
+         } catch (IOException e) {
+             // TODO Auto-generated catch block
+             e.printStackTrace();
+         }
+}
+}

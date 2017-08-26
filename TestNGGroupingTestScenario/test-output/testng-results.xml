@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="10" passed="10">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="174" started-at="2017-08-06T16:03:30Z" finished-at="2017-08-06T16:03:31Z">
+    <groups>
+      <group name="Sanity">
+        <method signature="SingleGroupTest.cancel()[pri:0, instance:com.TestcaseGroup.SingleGroupTest@56dfcb]" name="cancel" class="com.TestcaseGroup.SingleGroupTest"/>
+        <method signature="SingleGroupTest.login()[pri:0, instance:com.TestcaseGroup.SingleGroupTest@56dfcb]" name="login" class="com.TestcaseGroup.SingleGroupTest"/>
+        <method signature="SingleGroupTest.logout()[pri:0, instance:com.TestcaseGroup.SingleGroupTest@56dfcb]" name="logout" class="com.TestcaseGroup.SingleGroupTest"/>
+        <method signature="SingleGroupTest.viewProduct()[pri:0, instance:com.TestcaseGroup.SingleGroupTest@56dfcb]" name="viewProduct" class="com.TestcaseGroup.SingleGroupTest"/>
+        <method signature="SingleGroupTest2.cancel()[pri:0, instance:com.TestcaseGroup.SingleGroupTest2@144fc66]" name="cancel" class="com.TestcaseGroup.SingleGroupTest2"/>
+        <method signature="SingleGroupTest2.login()[pri:0, instance:com.TestcaseGroup.SingleGroupTest2@144fc66]" name="login" class="com.TestcaseGroup.SingleGroupTest2"/>
+        <method signature="SingleGroupTest2.logout()[pri:0, instance:com.TestcaseGroup.SingleGroupTest2@144fc66]" name="logout" class="com.TestcaseGroup.SingleGroupTest2"/>
+        <method signature="SingleGroupTest2.viewProduct()[pri:0, instance:com.TestcaseGroup.SingleGroupTest2@144fc66]" name="viewProduct" class="com.TestcaseGroup.SingleGroupTest2"/>
+      </group> <!-- Sanity -->
+      <group name="Smoke">
+        <method signature="SingleGroupTest.register()[pri:0, instance:com.TestcaseGroup.SingleGroupTest@56dfcb]" name="register" class="com.TestcaseGroup.SingleGroupTest"/>
+        <method signature="SingleGroupTest.viewProduct()[pri:0, instance:com.TestcaseGroup.SingleGroupTest@56dfcb]" name="viewProduct" class="com.TestcaseGroup.SingleGroupTest"/>
+        <method signature="SingleGroupTest2.register()[pri:0, instance:com.TestcaseGroup.SingleGroupTest2@144fc66]" name="register" class="com.TestcaseGroup.SingleGroupTest2"/>
+        <method signature="SingleGroupTest2.viewProduct()[pri:0, instance:com.TestcaseGroup.SingleGroupTest2@144fc66]" name="viewProduct" class="com.TestcaseGroup.SingleGroupTest2"/>
+      </group> <!-- Smoke -->
+      <group name="Smoke	">
+        <method signature="SingleGroupTest.login()[pri:0, instance:com.TestcaseGroup.SingleGroupTest@56dfcb]" name="login" class="com.TestcaseGroup.SingleGroupTest"/>
+        <method signature="SingleGroupTest.logout()[pri:0, instance:com.TestcaseGroup.SingleGroupTest@56dfcb]" name="logout" class="com.TestcaseGroup.SingleGroupTest"/>
+        <method signature="SingleGroupTest2.login()[pri:0, instance:com.TestcaseGroup.SingleGroupTest2@144fc66]" name="login" class="com.TestcaseGroup.SingleGroupTest2"/>
+        <method signature="SingleGroupTest2.logout()[pri:0, instance:com.TestcaseGroup.SingleGroupTest2@144fc66]" name="logout" class="com.TestcaseGroup.SingleGroupTest2"/>
+      </group> <!-- Smoke	 -->
+    </groups>
+    <test name="Default test" duration-ms="174" started-at="2017-08-06T16:03:30Z" finished-at="2017-08-06T16:03:31Z">
+      <class name="com.TestcaseGroup.SingleGroupTest2">
+        <test-method status="PASS" signature="cancel()[pri:0, instance:com.TestcaseGroup.SingleGroupTest2@144fc66]" name="cancel" duration-ms="4" started-at="2017-08-06T21:33:31Z" finished-at="2017-08-06T21:33:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cancel -->
+        <test-method status="PASS" signature="login()[pri:0, instance:com.TestcaseGroup.SingleGroupTest2@144fc66]" name="login" duration-ms="3" started-at="2017-08-06T21:33:31Z" finished-at="2017-08-06T21:33:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.TestcaseGroup.SingleGroupTest2@144fc66]" name="logout" duration-ms="2" started-at="2017-08-06T21:33:31Z" finished-at="2017-08-06T21:33:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="register()[pri:0, instance:com.TestcaseGroup.SingleGroupTest2@144fc66]" name="register" duration-ms="3" started-at="2017-08-06T21:33:31Z" finished-at="2017-08-06T21:33:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+        <test-method status="PASS" signature="viewProduct()[pri:0, instance:com.TestcaseGroup.SingleGroupTest2@144fc66]" name="viewProduct" duration-ms="3" started-at="2017-08-06T21:33:31Z" finished-at="2017-08-06T21:33:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewProduct -->
+      </class> <!-- com.TestcaseGroup.SingleGroupTest2 -->
+      <class name="com.TestcaseGroup.SingleGroupTest">
+        <test-method status="PASS" signature="cancel()[pri:0, instance:com.TestcaseGroup.SingleGroupTest@56dfcb]" name="cancel" duration-ms="28" started-at="2017-08-06T21:33:31Z" finished-at="2017-08-06T21:33:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cancel -->
+        <test-method status="PASS" signature="login()[pri:0, instance:com.TestcaseGroup.SingleGroupTest@56dfcb]" name="login" duration-ms="3" started-at="2017-08-06T21:33:31Z" finished-at="2017-08-06T21:33:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.TestcaseGroup.SingleGroupTest@56dfcb]" name="logout" duration-ms="5" started-at="2017-08-06T21:33:31Z" finished-at="2017-08-06T21:33:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="register()[pri:0, instance:com.TestcaseGroup.SingleGroupTest@56dfcb]" name="register" duration-ms="4" started-at="2017-08-06T21:33:31Z" finished-at="2017-08-06T21:33:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+        <test-method status="PASS" signature="viewProduct()[pri:0, instance:com.TestcaseGroup.SingleGroupTest@56dfcb]" name="viewProduct" duration-ms="4" started-at="2017-08-06T21:33:31Z" finished-at="2017-08-06T21:33:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewProduct -->
+      </class> <!-- com.TestcaseGroup.SingleGroupTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

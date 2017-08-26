@@ -44,7 +44,7 @@ import SnapShotUtility.SnapshotUtilty;
            
             driver.manage().window().maximize();
             // driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-            wait_10 = new WebDriverWait(driver, 20);
+            wait_10 = new WebDriverWait(driver, 40);
             driver.get("http://www.phptravels.net/admin");
 
         }
@@ -182,7 +182,7 @@ import SnapShotUtility.SnapshotUtilty;
                 String S = col.get(i).getText();
                 System.out.println(S);
 
-                if (S.equals("30")) {
+                if (S.equals("31")) {
 
                     driver.findElement(By.xpath(".//*[@id='30']/i")).click();
                     driver.switchTo().alert().accept();

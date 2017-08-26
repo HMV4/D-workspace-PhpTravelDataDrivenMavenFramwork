@@ -84,7 +84,8 @@ public class SIGNON {
 	 * // DepartMOnth WebElement Departmonths = driver.findElement(By
 	 * .cssSelector(DaArRetAirPath + "[name='fromMonth']")); Select
 	 * DepartmonthPort = new Select(Departmonths); List<WebElement>
-	 * Departmonthoptions = DepartmonthPort.getOptions(); for (WebElement option
+	 * Departmonthoptions = DepartmonthPort.getOptions(); 
+	 * for (WebElement option
 	 * : Departmonthoptions) { if
 	 * (option.getText().equalsIgnoreCase(Departmonth)) {
 	 * System.out.println(option.getText()); option.click();

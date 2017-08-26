@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="12" passed="12">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="170" started-at="2017-08-07T01:17:34Z" finished-at="2017-08-07T01:17:35Z">
+    <groups>
+      <group name="Sanity">
+        <method signature="com.TestcaseGroup.SingleGroupTest.cancel()" name="cancel" class="com.TestcaseGroup.SingleGroupTest"/>
+        <method signature="com.TestcaseGroup.SingleGroupTest.login()" name="login" class="com.TestcaseGroup.SingleGroupTest"/>
+        <method signature="com.TestcaseGroup.SingleGroupTest.logout()" name="logout" class="com.TestcaseGroup.SingleGroupTest"/>
+        <method signature="com.TestcaseGroup.SingleGroupTest.viewProduct()" name="viewProduct" class="com.TestcaseGroup.SingleGroupTest"/>
+        <method signature="com.TestcaseGroup.SingleGroupTest2.cancel()" name="cancel" class="com.TestcaseGroup.SingleGroupTest2"/>
+        <method signature="com.TestcaseGroup.SingleGroupTest2.login()" name="login" class="com.TestcaseGroup.SingleGroupTest2"/>
+        <method signature="com.TestcaseGroup.SingleGroupTest2.logout()" name="logout" class="com.TestcaseGroup.SingleGroupTest2"/>
+        <method signature="com.TestcaseGroup.SingleGroupTest2.viewProduct()" name="viewProduct" class="com.TestcaseGroup.SingleGroupTest2"/>
+      </group>
+      <group name="Smoke">
+        <method signature="com.TestcaseGroup.SingleGroupTest.viewProduct()" name="viewProduct" class="com.TestcaseGroup.SingleGroupTest"/>
+        <method signature="com.TestcaseGroup.SingleGroupTest.register()" name="register" class="com.TestcaseGroup.SingleGroupTest"/>
+        <method signature="com.TestcaseGroup.SingleGroupTest2.viewProduct()" name="viewProduct" class="com.TestcaseGroup.SingleGroupTest2"/>
+        <method signature="com.TestcaseGroup.SingleGroupTest2.register()" name="register" class="com.TestcaseGroup.SingleGroupTest2"/>
+      </group>
+      <group name="Smoke	">
+        <method signature="com.TestcaseGroup.SingleGroupTest.login()" name="login" class="com.TestcaseGroup.SingleGroupTest"/>
+        <method signature="com.TestcaseGroup.SingleGroupTest.logout()" name="logout" class="com.TestcaseGroup.SingleGroupTest"/>
+        <method signature="com.TestcaseGroup.SingleGroupTest2.login()" name="login" class="com.TestcaseGroup.SingleGroupTest2"/>
+        <method signature="com.TestcaseGroup.SingleGroupTest2.logout()" name="logout" class="com.TestcaseGroup.SingleGroupTest2"/>
+      </group>
+    </groups>
+    <test name="Test1" duration-ms="53" started-at="2017-08-07T01:17:34Z" finished-at="2017-08-07T01:17:35Z">
+      <class name="com.TestcaseGroup.SingleGroupTest">
+        <test-method status="PASS" signature="cancel()" name="cancel" duration-ms="22" started-at="2017-08-07T01:17:34Z" finished-at="2017-08-07T01:17:35Z">
+        </test-method>
+        <test-method status="PASS" signature="login()" name="login" duration-ms="1" started-at="2017-08-07T01:17:35Z" finished-at="2017-08-07T01:17:35Z">
+        </test-method>
+        <test-method status="PASS" signature="logout()" name="logout" duration-ms="1" started-at="2017-08-07T01:17:35Z" finished-at="2017-08-07T01:17:35Z">
+        </test-method>
+        <test-method status="PASS" signature="viewProduct()" name="viewProduct" duration-ms="0" started-at="2017-08-07T01:17:35Z" finished-at="2017-08-07T01:17:35Z">
+        </test-method>
+      </class>
+    </test>
+    <test name="Test4" duration-ms="6" started-at="2017-08-07T01:17:35Z" finished-at="2017-08-07T01:17:35Z">
+      <class name="com.TestcaseGroup.SingleGroupTest2">
+        <test-method status="PASS" signature="register()" name="register" duration-ms="1" started-at="2017-08-07T01:17:35Z" finished-at="2017-08-07T01:17:35Z">
+        </test-method>
+        <test-method status="PASS" signature="viewProduct()" name="viewProduct" duration-ms="2" started-at="2017-08-07T01:17:35Z" finished-at="2017-08-07T01:17:35Z">
+        </test-method>
+      </class>
+    </test>
+    <test name="Test3" duration-ms="9" started-at="2017-08-07T01:17:35Z" finished-at="2017-08-07T01:17:35Z">
+      <class name="com.TestcaseGroup.SingleGroupTest2">
+        <test-method status="PASS" signature="cancel()" name="cancel" duration-ms="1" started-at="2017-08-07T01:17:35Z" finished-at="2017-08-07T01:17:35Z">
+        </test-method>
+        <test-method status="PASS" signature="login()" name="login" duration-ms="1" started-at="2017-08-07T01:17:35Z" finished-at="2017-08-07T01:17:35Z">
+        </test-method>
+        <test-method status="PASS" signature="logout()" name="logout" duration-ms="1" started-at="2017-08-07T01:17:35Z" finished-at="2017-08-07T01:17:35Z">
+        </test-method>
+        <test-method status="PASS" signature="viewProduct()" name="viewProduct" duration-ms="1" started-at="2017-08-07T01:17:35Z" finished-at="2017-08-07T01:17:35Z">
+        </test-method>
+      </class>
+    </test>
+    <test name="Test2" duration-ms="3" started-at="2017-08-07T01:17:35Z" finished-at="2017-08-07T01:17:35Z">
+      <class name="com.TestcaseGroup.SingleGroupTest">
+        <test-method status="PASS" signature="register()" name="register" duration-ms="0" started-at="2017-08-07T01:17:35Z" finished-at="2017-08-07T01:17:35Z">
+        </test-method>
+        <test-method status="PASS" signature="viewProduct()" name="viewProduct" duration-ms="1" started-at="2017-08-07T01:17:35Z" finished-at="2017-08-07T01:17:35Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>

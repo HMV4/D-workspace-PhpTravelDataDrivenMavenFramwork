@@ -19,6 +19,7 @@ public class mouseAndKeys {
 		//driver.findElement(By.cssSelector(".mouseO" + "ut>a[href$='SignonServlet']")).click();
 		
 		// XPATH using preceding
+		////select/option[contains(text(),'London')]/following-sibling::option[@value='San Francisco']--used to find particular option
 		driver.findElement(By.xpath("//font/preceding::tr[6]/td[1]/a")).click();
 		// send text in textbox using java script in selenium and click submits
 		
@@ -30,12 +31,18 @@ public class mouseAndKeys {
 		// finding xpath of textbox  using its adjacent label
 		WebElement user=driver.findElement(By.xpath("//tr[1]/td[1]/font/b/following::td[1]/input"));
 		user.sendKeys("DDT1");
+		driver.findElement(By.xpath("//tr[1]/td[1]/font/b/following::td[1]/input")).sendKeys(Keys.F5);
+		driver.navigate().to(driver.getCurrentUrl());
+		WebElement tab=driver.findElement(By.xpath("//table/tbody/tr[3]/td/p/font/a"));
+		
+		// Shift Tab
+		tab.sendKeys(Keys.chord(Keys.SHIFT,"registration          form"));
 		WebElement pass = driver.findElement(By.name("password"));
 		
 		// code to paste the content into textboxes
-		ae.clickAndHold().moveToElement(user).release().keyDown(Keys.CONTROL).sendKeys("c").keyDown(Keys.CONTROL).keyUp(Keys.CONTROL).build().perform();
+		/*ae.clickAndHold().moveToElement(user).release().keyDown(Keys.CONTROL).sendKeys("c").keyDown(Keys.CONTROL).keyUp(Keys.CONTROL).build().perform();
 		ae.click(pass).keyDown(Keys.CONTROL).sendKeys("v").build().perform();
-		
+		*/
 		
 		
 		// Sign on button click
@@ -47,9 +54,7 @@ public class mouseAndKeys {
 		 */
 
 
-		WebElement departFrom = driver.findElement(By.cssSelector
-
-		("tr>td>select[name='fromPort']"));
+		WebElement departFrom = driver.findElement(By.cssSelector("tr>td>select[name='fromPort']"));
 
 		WebElement departOption = driver.findElement(By
 				.cssSelector("tr>td>select>option[value$='York']"));

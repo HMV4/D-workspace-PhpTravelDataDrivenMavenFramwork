@@ -1,19 +1,19 @@
 
-public class abstractDemo {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	 public abstract class abstractDemo {
+	
 		
-		
-		abstract void demo();
+	 int s=10;
+			// TODO Auto-generated method stub		
+    protected abstract void display1();
+	public void display()
+	{
+		System.out.println("NON ABSTRACT");
+	
 	
 	}
-
-	private static void demo() {
-		// TODO Auto-generated method stub
-		
-	}
+		}
 
 	
+	
 
-}
+
